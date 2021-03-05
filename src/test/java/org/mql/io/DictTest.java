@@ -1,7 +1,5 @@
 package org.mql.io;
-
 import org.junit.Test;
-
 import java.util.Map;
 
 import static org.junit.Assert.*;
@@ -16,7 +14,7 @@ public class DictTest {
 
     @Test
     public void numberOfEntries() {
-        assertEquals(6, dict.getDict().entrySet().size());
+        assertEquals(9, dict.getDict().entrySet().size());
     }
 
     @Test
