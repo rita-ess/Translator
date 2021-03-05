@@ -10,17 +10,17 @@ public class DictTest {
     Dict dict = Translator.Dict();
 
     @Test
-    public void isValidDictionary() {
+    void isValidDictionary() {
         assertNotNull(dict.getDict());
     }
 
     @Test
-    public void numberOfEntries() {
+    void numberOfEntries() {
         assertEquals(6, dict.getDict().entrySet().size());
     }
 
     @Test
-    public void containsUpperCase() {
+    void containsUpperCase() {
         for (Map.Entry<String, Map<String, String>> entry : dict.getDict().entrySet()) {
             for (Map.Entry<String, String> word : entry.getValue().entrySet()) {
                 assertTrue(isUpperCase(word.getValue()));
