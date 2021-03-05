@@ -24,6 +24,12 @@ public class Dict {
         spanishMap.put("afternoon", "tarde");
         spanishMap.put("night", "noche");
         dict.put("es", spanishMap);
+
+        Map<String, String> latinMap = new HashMap<>();
+        spanishMap.put("morning", "mane");
+        spanishMap.put("afternoon", "post meridiem");
+        spanishMap.put("night", "noctis");
+        dict.put("la", latinMap);
     }
 
     public Map<String, Map<String, String>> getDict() {
